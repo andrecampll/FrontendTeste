@@ -9,13 +9,14 @@ export default createGlobalStyle`
   }
 
   body {
-    font: 400 14px Roboto, sans-serif;
-    background: #7159c1;
+    font: 400 14px Nunito Sans, sans-serif;
+    background: #020202;
     -webkit-font-smoothing: antialiased;
   }
 
   input, button, textarea {
-    font: 400 18px Roboto, sans-serif;
+    font: 400 18px Nunito Sans, sans-serif;
+    border: 0;
   }
 
   button {
