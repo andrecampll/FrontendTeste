@@ -10,31 +10,16 @@ export const Container = styled.div`
     color: #fb5353;
   }
 
-  button {
-    width: 516px;
-    height: 73px;
-    border-radius: 10px;
-    background-color: #4dc30f;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    transition: all 0.2s;
-    margin-top: 15px;
-    margin-bottom: 20px;
-
-    &:hover {
-      opacity: 0.8;
-    }
-  }
-
   p {
     font-size: 14px;
     font-weight: 400;
     color: #efefef;
     opacity: 0.65;
-    height: 53px;
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 30px;
   }
 
   h3 {
@@ -43,6 +28,25 @@ export const Container = styled.div`
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
+  }
+`;
+
+export const AcceptButton = styled.button`
+  width: 516px;
+  height: 73px;
+  border-radius: 10px;
+  background-color: #4dc30f;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+  margin-top: 15px;
+  margin-bottom: 20px;
+
+  &:hover {
+    opacity: 0.8;
   }
 `;
 
@@ -56,7 +60,7 @@ export const SellContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px 0px;
-  margin-bottom: 15px;
+  margin: 15px 0px;
   
   div {
     display: flex;
@@ -161,4 +165,74 @@ export const Break = styled.div`
   height: 7px;
   background-color: #1c1c1c;
   margin: 30px 0px;
+`;
+
+export const ExtensionContainer = styled.div`
+  width: 85%;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.49);
+  border-radius: 0px 30px 30px 0px;
+  background-color: #0e0e0e;
+  padding: 0px 115px 0px 0px;
+  display: flex;
+  flex-direction: row;
+
+  section {
+    margin-left: 115px;
+    margin-top: 73px;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  span {
+    color: #3380ea;
+    font-size: 35px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0px;
+    opacity: 0.9;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+      position: relative;
+      bottom: 31px;
+      left: 8px;
+    }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 100px;
+  }
+`;
+
+export const Badge = styled.div`
+  width: 18px;
+  height: 791px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.49);
+  border-radius: 30px 0 0 30px;
+  background-color: ${props => props.color};
+`;
+
+export const WrapperContent = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 65px;
 `;
