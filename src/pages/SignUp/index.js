@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 import {
   Container, 
@@ -17,7 +18,17 @@ import { MdLockOutline } from 'react-icons/md';
 import astron from '../../assets/logotipo.png';
 import logo from '../../assets/logo-completa.png';
 
-export default function pageOne() {
+
+export default function SignUp() {
+  const history = useHistory();
+  
+
+  function handleSubmit(e) {
+    
+    e.preventDefault();
+    history.push('/Obrigado');
+  }
+
   return (
     <Container>
       <Logo src={logo} />
@@ -28,7 +39,7 @@ export default function pageOne() {
           <Divider />
         </div>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
             <FaRegUserCircle size={30} color="#666"/>
             <Input placeholder="Seu nome completo..."/>

@@ -10,13 +10,17 @@ export default createGlobalStyle`
 
   body {
     font: 400 14px Nunito Sans, sans-serif;
-    background: #020202;
+    background: #0a0a0a;
     -webkit-font-smoothing: antialiased;
   }
 
   input, button, textarea {
     font: 400 18px Nunito Sans, sans-serif;
     border: 0;
+  }
+
+  span {
+    text-decoration: underline;
   }
 
   button {

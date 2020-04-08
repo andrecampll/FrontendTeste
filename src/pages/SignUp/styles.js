@@ -120,7 +120,6 @@ export const Footer = styled.footer`
     font-size: 19px;
     font-weight: 400;
     color: #2e2e2e;
-    font-family: Arial, Helvetica, sans-serif;
     height: 53px;
     a {
       text-decoration: none;
