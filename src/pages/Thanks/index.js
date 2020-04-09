@@ -28,7 +28,6 @@ import {AiOutlineExclamationCircle, AiOutlineCloseCircle} from 'react-icons/ai';
 export default function Thanks() {
   const [translate, setTranslate] = useState(false);
   const [transformPromoOpacity, setTransformPromoOpacity] = useState(false);
-  const [transformOpacity, setTransformOpacity] = useState(false);
 
   const [downSell, setDownSell] = useState(false);
   const [styles, setStyles] = useState([{
@@ -116,7 +115,10 @@ export default function Thanks() {
           </PromoContainer>
 
           <Link onClick={handleDownSell}><span>Não obrigado, quero perder esta oferta.</span></Link>
-          <AcceptButton>Comprar Pacote Completo - R$ 67,00</AcceptButton>
+          
+          <AcceptButton>
+            <Link to="/">Comprar Pacote Completo - R$ 67,00</Link>
+          </AcceptButton>
           <h3>Aviso: Esta extensão será adicionada a sua área de membros automaticamente. <br/>
           Você terá acesso a este curso por tempo vitalício (este curso não expira).</h3>
         
@@ -166,7 +168,10 @@ export default function Thanks() {
                 <img src={style.image} alt=""/>
               </div>
             <AcceptButton>
-              <Link to="/Proposal">
+              <Link to={{
+                pathname: "/proposal",
+                state: styles.indexOf(style),
+              }}>
                 Adicionar ao Pedido - R$ 27,90
               </Link>
             </AcceptButton>

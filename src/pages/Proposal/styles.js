@@ -12,7 +12,26 @@ export const Container = styled.div`
     color: #efefef;
     opacity: 0.65;
   }
+  a {
+    color: #fb5353;
+  }
 `;
+
+export const ExtensionsContainer = styled.div`
+  
+  div + div {
+    position: relative;
+    bottom: 355px;
+    left: 125px;
+    height: 500px;
+  }
+
+  img {
+    width: 280px;
+    height: 400px;
+  }
+`;
+
 
 export const Footer = styled.footer`
   margin-top: 130px;
@@ -59,6 +78,7 @@ export const Upsell = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 115px;
+  margin-bottom: 50px;
 
   div {
     margin-top: 0px;

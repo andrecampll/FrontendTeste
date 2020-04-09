@@ -1,12 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import { Container, Footer, Break, AcceptButton, Upsell } from './styles';
+import { Container, ExtensionsContainer, Footer, Break, AcceptButton, Upsell } from './styles';
 
-import Extensions from '../../components/Extensions';
+import CursoUm from '../../assets/CursoUm.png'
+import CursoTres from '../../assets/CursoTres.png'
+import CursoDois from '../../assets/CursoDois.png'
 
 import astron from '../../assets/logotipo.png'
 
-export default function Proposal() {
+export default function Proposal(styles) {
+  const { state } = styles.location;
+  const photos = [CursoDois, CursoTres, CursoUm];
+
+  photos.splice(state, 1);
+
+  console.log(state);
   return (
     <Container>
       <p>Não se preocupe, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
@@ -31,12 +40,24 @@ export default function Proposal() {
 
               Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. <br/>
               </p>
+              {/* <p><strong>Aviso:</strong> Esta extensão será adicionada a sua área de membros automaticamente. Você terá acesso a este curso por tempo vitalício (este curso não expira).</p> */}
             </aside>
-            <Extensions />
+            <ExtensionsContainer>
+              {
+                photos.map(extension => (
+                  <div>
+                    <img src={extension} alt="Curso"/>
+                  </div>
+                ))
+              }
+            </ExtensionsContainer>
           </div>
-          <AcceptButton>Adicionar ao Pedido - R$ 27,90</AcceptButton>
+          <AcceptButton>Adicionar ao Pedido - R$ 32,90</AcceptButton>
         </section>
       </Upsell>
+
+      <Link to="/Obrigado"><span>Não obrigado, quero perder esta oferta.</span></Link>
+
       <Footer>
         <p>
           <a href="#">Termos de Uso e</a><a href="#"> Politicas de Privacidade.</a>
