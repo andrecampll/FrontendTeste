@@ -5,6 +5,12 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px); */
+  /* filter: blur(${props => props.focus}); */
+  transition: all 2s;
 
   a {
     color: #fb5353;
@@ -37,10 +43,12 @@ export const AcceptButton = styled.button`
   border-radius: 10px;
   background-color: #4dc30f;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  a {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
   transition: all 0.2s;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -78,6 +86,35 @@ export const SellContainer = styled.div`
       left: 210px;
     }
   }
+  
+  p {
+    color: #fb5353;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    strong {
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+`;
+
+export const DownSellContainer = styled.div`
+  width: 85%;
+  height: 255px;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
   
   p {
     color: #fb5353;
@@ -145,18 +182,6 @@ export const PromoContainer = styled.div`
   div {
     margin-top: 10px;
     height: 724px;
-  }
-
-  img + div {
-    position: relative;
-    bottom: 355px;
-    left: 125px;
-    height: 500px;
-  }
-
-  img {
-    width: 280px;
-    height: 400px;
   }
 `;
 
@@ -235,4 +260,38 @@ export const WrapperContent = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-top: 65px;
+`;
+
+export const Footer = styled.footer`
+  margin-top: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  p {
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 0.75;
+    height: 53px;
+    font-size: 20px;
+    text-decoration: underline;
+    a {
+      text-decoration: none;
+      font-weight: 400;
+      color: #ffffff;
+      opacity: 0.75;
+    }
+  }
+
+  h3 {
+    color: #939393;
+    font-size: 13px;
+    margin-left: 8px;
+  }
+
+  div {
+    display: flex;
+    margin: 25px 0px;
+  }
 `;
