@@ -26,7 +26,10 @@ import astron from '../../assets/logotipo.png'
 import {AiOutlineExclamationCircle, AiOutlineCloseCircle} from 'react-icons/ai';
 
 export default function Thanks() {
-  const [focus, setFocus] = useState(0);
+  const [translate, setTranslate] = useState(false);
+  const [transformPromoOpacity, setTransformPromoOpacity] = useState(false);
+  const [transformOpacity, setTransformOpacity] = useState(false);
+
   const [downSell, setDownSell] = useState(false);
   const [styles, setStyles] = useState([{
     color:"#fb5353", image: CursoDois,
@@ -37,17 +40,37 @@ export default function Thanks() {
   }]);
 
   function handleDownSell() {
-    setFocus(5);
     setDownSell(true);
+    setTranslate(true);
+    return true;
+  }
+
+  function handleTranslate() {
+    if (transformPromoOpacity === true && translate === true) {
+      return false;
+    }
+    else {
+      window.addEventListener('scroll', () => {
+        const scrolled = window.scrollY;
+        if (scrolled > 196 && transformPromoOpacity === false) {
+          return setTransformPromoOpacity(true);
+        }
+        if (scrolled > 1121 && translate === false){
+          return setTranslate(true);
+        }
+      });
+    }
   }
   
+  handleTranslate();
+
   return (
 
-    <Container focus={focus} >
+    <Container >
       <p>Não se preocupe, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
 
       { downSell ? (
-        <DownSellContainer>
+        <DownSellContainer translate={translate} >
           <h1>Antes de ir, o que acha de adicionar <br/>
           algumas extensões separadas?</h1>
         
@@ -75,7 +98,7 @@ export default function Thanks() {
           Portanto, se fechar esta pagina não poderá obtê-la novamente e perderá a oferta.</p>
           </SellContainer>
 
-          <PromoContainer>
+          <PromoContainer transformPromoOpacity={transformPromoOpacity}>
             <section>
               <h2>Pacote com 3 Extensões Exclusivas</h2>
               <h1>As 3 Principais Habilidades <br/>
@@ -108,7 +131,7 @@ export default function Thanks() {
       
       {styles.map(style => (
         <WrapperContent>
-        <ExtensionContainer>
+        <ExtensionContainer translate={translate}>
           <Badge color={style.color} />
           <section>
             <h1><span>Estoicismo:</span> A arte de não sofrer.</h1>

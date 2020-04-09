@@ -1,16 +1,32 @@
-import styled from 'styled-components';
+import styled, {  keyframes, css  } from 'styled-components';
+
+export const translate = keyframes`
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+`;
+
+export const opacityTransform = keyframes`
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+`;
 
 export const Container = styled.div`
   padding: 30px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* -webkit-filter: blur(15px);
-  -moz-filter: blur(15px);
-  -o-filter: blur(15px);
-  -ms-filter: blur(15px); */
-  /* filter: blur(${props => props.focus}); */
-  transition: all 2s;
 
   a {
     color: #fb5353;
@@ -115,6 +131,14 @@ export const DownSellContainer = styled.div`
   flex-direction: column;
   align-items: center;
   margin-bottom: 25px;
+  opacity: 0;
+
+  ${props => props.translate && css`
+    & {
+      animation: ${opacityTransform} 2s linear;
+      opacity: 1;
+    }
+  `}
   
   p {
     color: #fb5353;
@@ -148,6 +172,14 @@ export const PromoContainer = styled.div`
   flex-direction: row;
   width: 80%;
   margin-top: 20px;
+  opacity: 0;
+
+  ${props => props.transformPromoOpacity && css`
+    & {
+      animation: ${opacityTransform} 2s linear;
+      opacity: 1;
+    }
+  `}
 
   section {
     width: 580px;
@@ -200,6 +232,15 @@ export const ExtensionContainer = styled.div`
   padding: 0px 115px 0px 0px;
   display: flex;
   flex-direction: row;
+  opacity: 0;
+
+  ${props => props.translate && css`
+    & {
+      animation: ${translate} 2s linear;
+      opacity: 1;
+    }
+  `}
+
 
   section {
     margin-left: 115px;
