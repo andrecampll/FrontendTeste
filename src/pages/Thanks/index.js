@@ -66,6 +66,7 @@ export default function Thanks() {
   return (
 
     <Container >
+      
       <p>Não se preocupe, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
 
       { downSell ? (
@@ -80,8 +81,11 @@ export default function Thanks() {
         <>
           <SellContainer>
             <div>
-              <AiOutlineExclamationCircle size={35} color="#fb5353"/>
-              <p>Espere… Antes de continuar, acreditamos que isso possa te interessar.</p>
+              <p></p>
+              <header>
+                <AiOutlineExclamationCircle size={35} color="#fb5353"/>
+                <p>Espere… Antes de continuar, acreditamos que isso possa te interessar.</p>
+              </header>
               
               <Link onClick={handleDownSell}>
                 <AiOutlineCloseCircle size={30} color="#333333" />
@@ -163,7 +167,8 @@ export default function Thanks() {
 
                   <p>Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica data.</p>
 
-                  <p><strong>Aviso:</strong> Esta extensão será adicionada a sua área de membros automaticamente. Você terá acesso a este curso por tempo vitalício (este curso não expira).</p>
+                  <p><strong>Aviso:</strong> Esta extensão será adicionada a sua área de membros automaticamente. Você <br/>
+                  terá acesso a este curso por tempo vitalício (este curso não expira).</p>
                 </aside>
                 <img src={style.image} alt=""/>
               </div>

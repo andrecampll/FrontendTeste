@@ -25,10 +25,15 @@ export default function Upsell() {
 
               Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada. <br/> <br/>
 
-              Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. <br/>
+              Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. <br/> <br/>
+              
+              Aviso: Esta extensão será adicionada a sua área de membros automaticamente.
+              Você terá acesso a este curso por tempo vitalício (este curso não expira).
               </p>
             </aside>
-            <Extensions />
+            <div>
+              <Extensions />
+            </div>
           </div>
           <AcceptButton>Adicionar ao Pedido - R$ 27,90</AcceptButton>
         </section>

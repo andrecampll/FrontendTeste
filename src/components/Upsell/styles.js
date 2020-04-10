@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const UpsellContainer = styled.div`
-  width: 85%;
+  width: 100%;
+  max-width: 1596px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.49);
   border-radius: 30px;
   border: 7px solid #79d152;
@@ -27,7 +28,7 @@ export const UpsellContainer = styled.div`
 
   h1 + p {
     color: #fb5353;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
     text-align: center;
     strong {
@@ -42,30 +43,32 @@ export const UpsellContainer = styled.div`
 
   aside + div {
     position: relative;
-    right: 7%;
-    margin-top: 6%;
+    margin-top: 5%;
+    bottom: 6%;
   }
 
   aside > p {
     margin-top: 41px;
+    width: 774px;
     color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 19px;
+    font-weight: 600;
     opacity: 0.8;
     text-align: start;
     margin-bottom: 40px;
   }
 
   section {
-    margin-top: 100px;
+    margin-top: 55px;
     padding-bottom: 30px;
-    height: 855px;
+    height: 100%;
+    width: 100%;
   }
 
   section > div {
     display: flex;
     flex-direction: row;
-    height: 730px;
+    height: 535px;
   }
 `;
 
@@ -80,8 +83,8 @@ export const AcceptButton = styled.button`
   font-weight: 700;
   letter-spacing: 0.5px;
   transition: all 0.2s;
-  margin-top: 15px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 81px;
 
   &:hover {
     opacity: 0.8;
@@ -92,5 +95,5 @@ export const Break = styled.div`
   width: 909px;
   height: 7px;
   background-color: #1c1c1c;
-  margin: 30px 0px;
+  margin: 45px 0px;
 `;
