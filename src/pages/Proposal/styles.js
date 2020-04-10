@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 30px 0px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,6 +9,9 @@ export const Container = styled.div`
   a {
     color: #fb5353;
     font-size: 20px;
+    @media only screen and (max-width: 2000px) {
+      font-size: 15px;
+    }
   }
 
   p {
@@ -16,6 +19,9 @@ export const Container = styled.div`
     font-weight: 400;
     color: #efefef;
     opacity: 0.65;
+    @media only screen and (max-width: 2000px) {
+      font-size: 15px;
+    }
   }
 
   h1 {
@@ -45,11 +51,21 @@ export const UpsellContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 115px;
+
+  @media only screen and (max-width: 2000px) {
+    width: 85%;
+    margin-top: 45px;
+    padding: 0 60px;
+  }
   
   h1 {
     margin-top: 69px;
     font-size: 55px;
     text-align: center;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 60px;
+      font-size: 40px;
+    }
   }
 
   aside > h1 {
@@ -57,6 +73,10 @@ export const UpsellContainer = styled.div`
     font-size: 35px;
     font-weight: 600;
     text-align: start;
+
+    @media only screen and (max-width: 2000px) {
+      font-size: 25px;
+    }
   }
 
   h1 + p {
@@ -64,14 +84,19 @@ export const UpsellContainer = styled.div`
     font-size: 25px;
     font-weight: 400;
     text-align: center;
-    strong {
-      opacity: 1;
+    opacity: 1;
+    @media only screen and (max-width: 2000px) {
+      font-size: 17px;
     }
   }
 
   aside {
     height: 346px;
     margin-right: 139px;
+    @media only screen and (max-width: 2000px) {
+      margin-right: 50px;
+      height: 429px;
+    }
   }
 
   aside + div {
@@ -89,18 +114,30 @@ export const UpsellContainer = styled.div`
     opacity: 0.8;
     text-align: start;
     margin-bottom: 40px;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 22px;
+      width: 585px;
+      font-size: 14px;
+    }
   }
 
   section {
     padding-bottom: 30px;
     height: 100%;
     width: 100%;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 0px;
+    }
   }
 
   section > div {
     display: flex;
     flex-direction: row;
     height: 535px;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 40px;
+      height: 399px;
+    }
   }
 `;
 
@@ -111,11 +148,18 @@ export const ExtensionsContainer = styled.div`
     bottom: 355px;
     left: 125px;
     height: 500px;
+    @media only screen and (max-width: 2000px) {
+      left: 100px;
+    }
   }
 
   img {
     width: 345px;
     height: 499px;
+    @media only screen and (max-width: 2000px) {
+      width: 280px;
+      height: 411px;
+    }
   }
 `;
 
@@ -151,86 +195,12 @@ export const Footer = styled.footer`
   div {
     display: flex;
     margin: 25px 0px;
-  }
-`;
-
-export const Upsell = styled.div`
-  width: 85%;
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.49);
-  border-radius: 30px;
-  border: 7px solid #79d152;
-  background-color: #0e0e0e;
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 115px;
-  margin-bottom: 50px;
-
-  div {
-    margin-top: 0px;
-  }
-  
-  h1 {
-    color: #ffffff;
-    font-size: 45px;
-    font-weight: 600;
-    margin-top: 50px;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-
-  h2 {
-    color: #ffffff;
-    font-size: 23px;
-    font-weight: 600;
-    text-align: start;
-  }
-
-  h1 + p {
-    color: #fb5353;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 20px;
-    strong {
-      opacity: 1;
+    @media only screen and (max-width: 2000px) {
+      margin: 0px;
     }
   }
-
-  aside {
-    height: 346px;
-    margin-right: 139px;
-  }
-
-  aside + div {
-    position: relative;
-    right: 7%;
-    margin-top: 6%;
-  }
-
-  aside > p {
-    margin-top: 41px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 400;
-    opacity: 0.8;
-    text-align: start;
-    margin-bottom: 40px;
-  }
-
-  section {
-    margin-top: 50px;
-    padding-bottom: 30px;
-    height: 780px;
-  }
-
-  section > div {
-    display: flex;
-    flex-direction: row;
-    height: 600px;
-  }
 `;
+
 
 export const AcceptButton = styled.button`
   width: 516px;
@@ -246,14 +216,26 @@ export const AcceptButton = styled.button`
   margin-top: 30px;
   margin-bottom: 81px;
 
+  @media only screen and (max-width: 2000px) {
+    width: 389px;
+    height: 49px;
+    border-radius: 7px;
+    font-size: 19px;
+  }
+
   &:hover {
     opacity: 0.8;
   }
 `;
 
 export const Break = styled.div`
-  width: 730px;
+  width: 909px;
   height: 7px;
   background-color: #1c1c1c;
-  margin: 30px 0px;
+  margin-top: 45px;
+  margin-bottom: 0px;
+
+  @media only screen and (max-width: 2000px) {
+    width: 641px;
+  }
 `;

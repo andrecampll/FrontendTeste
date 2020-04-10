@@ -12,11 +12,21 @@ export const UpsellContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 115px;
+
+  @media only screen and (max-width: 2000px) {
+    width: 85%;
+    margin-top: 45px;
+    padding: 0 60px;
+  }
   
   h1 {
     margin-top: 69px;
     font-size: 55px;
     text-align: center;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 60px;
+      font-size: 40px;
+    }
   }
 
   aside > h1 {
@@ -24,6 +34,9 @@ export const UpsellContainer = styled.div`
     font-size: 35px;
     font-weight: 600;
     text-align: start;
+    @media only screen and (max-width: 2000px) {
+      font-size: 25px;
+    }
   }
 
   h1 + p {
@@ -31,14 +44,21 @@ export const UpsellContainer = styled.div`
     font-size: 25px;
     font-weight: 400;
     text-align: center;
+    opacity: 1;
     strong {
       opacity: 1;
+    }
+    @media only screen and (max-width: 2000px) {
+      font-size: 17px;
     }
   }
 
   aside {
     height: 346px;
     margin-right: 139px;
+    @media only screen and (max-width: 2000px) {
+      margin-right: 22px;
+    }
   }
 
   aside + div {
@@ -56,6 +76,11 @@ export const UpsellContainer = styled.div`
     opacity: 0.8;
     text-align: start;
     margin-bottom: 40px;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 22px;
+      width: 622px;
+      font-size: 15px;
+    }
   }
 
   section {
@@ -63,12 +88,19 @@ export const UpsellContainer = styled.div`
     padding-bottom: 30px;
     height: 100%;
     width: 100%;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 0px;
+    }
   }
 
   section > div {
     display: flex;
     flex-direction: row;
     height: 535px;
+    @media only screen and (max-width: 2000px) {
+      margin-top: 40px;
+      height: 399px;
+    }
   }
 `;
 
@@ -85,6 +117,13 @@ export const AcceptButton = styled.button`
   transition: all 0.2s;
   margin-top: 30px;
   margin-bottom: 81px;
+  
+  @media only screen and (max-width: 2000px) {
+    width: 389px;
+    height: 49px;
+    border-radius: 7px;
+    font-size: 19px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -96,4 +135,7 @@ export const Break = styled.div`
   height: 7px;
   background-color: #1c1c1c;
   margin: 45px 0px;
+  @media only screen and (max-width: 2000px) {
+    width: 641px;
+  }
 `;
