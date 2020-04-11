@@ -4,22 +4,22 @@ export const Container = styled.div`
   
   img + div {
     position: relative;
-    bottom: 430px;
-    left: 133px;
+    bottom: 354px;
+    left: 116px;
     height: 500px;
-    @media only screen and (max-width: 2000px) {
-      bottom: 354px;
-      left: 116px;
+    @media only screen and (min-width: 1804px) {
+      bottom: 430px;
+      left: 133px;
       height: 500px;
     }
   }
 
   img {
-    width: 345px;
-    height: 499px;
-    @media only screen and (max-width: 2000px) {
-      width: 275px;
-      height: 404px;
+    width: 275px;
+    height: 404px;
+    @media only screen and (min-width: 1804px) {  
+      width: 345px;
+      height: 499px;
     }
   }
 `;

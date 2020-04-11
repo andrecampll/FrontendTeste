@@ -9,14 +9,13 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 139px;
-  height: 154px;
-  margin-top: 18px;
-
-  @media (max-width: 2000px) {
-    width: 90px;
-    height: 99.7px;
-    margin-top: 10px;
+  width: 90px;
+  height: 99.7px;
+  margin-top: 10px;
+  @media (min-width: 1804px) {
+    width: 139px;
+    height: 154px;
+    margin-top: 18px;
   }
 `; 
 
@@ -24,50 +23,51 @@ export const SignUpContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 622px;
-  max-height: 662px;
-  border-radius: 35px;
   background-color: #101010;
-  margin-top: 50px;
-  padding: 38px 0px;
+  max-width: 388px;
+  max-height: 413px;
+  border-radius: 20px;
+  margin-top: 25px;
+  padding: 17px 0px;
   margin-bottom: 31px;
 
-  @media only screen and (max-width: 2000px) {
-    max-width: 388px;
-    max-height: 413px;
-    border-radius: 20px;
-    margin-top: 25px;
-    padding: 17px 0px;
+  @media only screen and (min-width: 1804px) {
+    max-width: 622px;
+    max-height: 662px;
+    border-radius: 35px;
+    margin-top: 50px;
+    padding: 38px 0px;
     margin-bottom: 31px;
 
     h1 {
-      font-size: 13px !important;
-      letter-spacing: 4px !important;
+      font-size: 20px !important;
+      letter-spacing: 6px !important;
       line-height: 26px !important;
       text-transform: uppercase !important;
-      margin-bottom: 12px !important;
+      margin-bottom: 32px !important;
     }
 
   }
 
   form {
-    margin-top: 77px;
+    margin-top: 45px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    @media only screen and (max-width: 2000px) { 
-      margin-top: 45px;
+    @media only screen and (min-width: 1804px) { 
+      margin-top: 77px;
     }    
   }
 
   h1 {
-    font-size: 20px;
-    font-weight: 400px;
-    color: #cccccc;
-    letter-spacing: 6px;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin-bottom: 32px;
+
+    font-size: 13px ;
+    letter-spacing: 4px !important;
+    line-height: 26px !important;
+    text-transform: uppercase !important;
+    margin-bottom: 12px !important;
+    font-weight: 400px !important;
+    color: #cccccc !important;
   }
 
   h2 {
@@ -76,13 +76,14 @@ export const SignUpContent = styled.div`
     font-family: 'Segoe UI', sans-serif !important;
     font-weight: 400;
     letter-spacing: 0.37px;
+
     line-height: 12px;
-    font-size: 17px;
-    margin-left: 5px;
-    @media only screen and (max-width: 2000px) {
+    font-size: 10px;
+    margin-left: 4px;
+    @media only screen and (min-width: 1804px) {
       line-height: 12px;
-      font-size: 10px;
-      margin-left: 4px;
+      font-size: 17px;
+      margin-left: 5px;    
     }
   }
 
@@ -94,27 +95,25 @@ export const SignUpContent = styled.div`
   }
 
   form > div {
-    width: 404px;
-    height: 73px;
-    border-radius: 10px;
+    width: 250px;
+    height: 44px;
+    border-radius: 5px;
+    margin-bottom: 12px;
     background-color: #1d1d1d;
     display: flex;
     flex-direction: row;
-    margin-bottom: 18px;
     
-    @media only screen and (max-width: 2000px) {
-      width: 250px;
-      height: 44px;
-      border-radius: 5px;
-      margin-bottom: 12px;
+    @media only screen and (min-width: 1804px) {
+      width: 404px;
+      height: 73px;
+      border-radius: 10px;
+      margin-bottom: 18px;
     }
   }
 
   div > svg {
-    @media only screen and (max-width: 2000px) {
-      height: 18px;
-      width: 18px;
-    }
+    height: 18px;
+    width: 18px;
   }
 
   button + div {
@@ -123,60 +122,62 @@ export const SignUpContent = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 18px;
+    height: 13px;
+    
     svg {
-      @media only screen and (max-width: 2000px) {
-      height: 13px;
+      @media only screen and (min-width: 1804px) {
+      height: 18px;
       width: 13px;
       }
     }
   }
 `; 
 export const Divider = styled.div`
-  width: 623px;
-  height: 7px;
   background-image: linear-gradient(89deg, #1054f1 0%, #1edaa7 100%);
+  width: 388px;
+  height: 4px;
   
-  @media only screen and (max-width: 2000px){
-    width: 388px;
-    height: 4px;
+  @media only screen and (min-width: 1804px){
+    width: 623px;
+    height: 7px;
   }
 `; 
 export const Input = styled.input`
-  border-radius: 10px;
   background-color: #1d1d1d;
   color: #ffffff;
-  padding: 23px 23px;
-  font-size: 20px;
-  width: 320px;
-  @media only screen and (max-width: 2000px) {
+
+  border-radius: 10px;
+  padding: 9px 9px;
+  font-size: 12px;
+  width: 196px;
+  @media only screen and (min-width: 1804px) {
     border-radius: 10px;
-    padding: 9px 9px;
-    font-size: 12px;
-    width: 196px; 
+    padding: 23px 23px;
+    font-size: 20px;
+    width: 320px;  
   }
 `;
 export const Button = styled.button`
-  width: 404px;
-  height: 73px;
-  border-radius: 10px;
   background: linear-gradient(246deg, #206af7 0%, #3380ea 100%);
-  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.44px;
   color: #ffffff;
-  margin-bottom: 32px;
-  margin-top: 35px;
   transition: 0.3s all;
 
-  @media only screen and (max-width: 2000px) {
-    width: 250px;
-    height: 44px;
-    border-radius: 5px;
-    font-size: 15px;
-    letter-spacing: 0.44px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  width: 250px;
+  height: 44px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 0.44px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  @media only screen and (min-width: 1804px) {
+    width: 404px;
+    height: 73px;
+    border-radius: 10px;
+    font-size: 22px;
+    margin-bottom: 32px;
+    margin-top: 35px;
   }
 
   &:hover {
@@ -191,14 +192,15 @@ export const Footer = styled.footer`
   text-align: center;
 
   p {
-    font-size: 19px;
     font-weight: 400;
     color: #2e2e2e;
-    height: 53px;
 
-    @media only screen and (max-width: 2000px) {
-      font-size: 11px;
-      height: 46px;
+    font-size: 11px;
+    height: 46px;
+
+    @media only screen and (min-width: 1804px) {
+      height: 53px;
+      font-size: 19px;      
     }
 
     a {
@@ -210,22 +212,22 @@ export const Footer = styled.footer`
 
   h3 {
   color: #939393;
-    @media only screen and (max-width: 2000px) {
-      font-size: 10px;
+  font-size: 10px;
+    @media only screen and (min-width: 1804px) {
     }
   }
 
   div {
     display: flex;
-    margin: 41px 0px;
-    @media only screen and (max-width: 2000px) {
-      margin: 10px 0px;
+    margin: 10px 0px;
+    @media only screen and (min-width: 1804px) {
+      margin: 41px 0px;
     }
   }
 
   div > img {
-    @media only screen and (max-width: 2000px) {
-      width: 20px;
+    width: 20px;
+    @media only screen and (min-width: 1804px) {
     }
   }
 `;

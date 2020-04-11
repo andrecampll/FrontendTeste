@@ -31,11 +31,11 @@ export const Container = styled.div`
   a {
     color: #fb5353;
     font-size: 15px;
-    @media only screen and(max-width: 2000px) {
-      span {
-        font-size: 15px !important;
-        
-      }
+    span {
+      font-size: 15px !important;  
+    }
+    @media only screen and(min-width: 1804px) {
+      
     }
   }
 
@@ -44,20 +44,21 @@ export const Container = styled.div`
   }
 
   p {
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 400;
     color: #efefef;
     opacity: 0.65;
-    @media only screen and (max-width: 2000px){
-      font-size: 13px;
+    @media only screen and (min-width: 1804px){
+      font-size: 20px;
     }
   }
 
   h1 {
     color: #ffffff;
-    font-size: 45px;
-    @media only screen and (max-width: 2000px) {
-      font-size: 32px;
+    font-size: 32px;
+
+    @media only screen and (min-width: 1804px) {
+      font-size: 45px;    
     }
   }
 
@@ -65,42 +66,44 @@ export const Container = styled.div`
     text-align: center;
     opacity: 0.5;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 700;
-    @media only screen and (max-width: 2000px) {
-      font-size: 18px;
+    @media only screen and (min-width: 1804px) {
+      font-size: 25px;    
     }
   }
 `;
 
 export const AcceptButton = styled.button`
-  width: 516px;
-  height: 73px;
-  border-radius: 10px;
-  background-color: #4dc30f;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-  @media only screen and (max-width: 2000px) {
-    width: 389px;
-    height: 49px;
-    border-radius: 7px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    a {
-      color: #ffffff !important;
-      font-size: 19px !important;
-      font-weight: 700 !important;
-    }
-  }
+  width: 389px;
+  height: 49px;
+  border-radius: 7px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+
   a {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 700;
-    letter-spacing: 0.5px;
   }
-  transition: all 0.2s;
-  margin-top: 15px;
-  margin-bottom: 20px;
 
+  
+  background-color: #4dc30f;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  @media only screen and (min-width: 1804px) {
+    width: 516px;
+    height: 73px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    a {
+      color: #ffffff;
+      font-size: 25px !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.5px;
+    }
+  }
   &:hover {
     opacity: 0.8;
   }
@@ -109,21 +112,23 @@ export const AcceptButton = styled.button`
 export const SellContainer = styled.div`
   width: 85%;
   max-width: 1596px;
-  max-height:526px;
-  height: 440px;
+  max-height: 518px;
+  height: 335px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.49);
   border-radius: 30px;
   background-color: #0e0e0e;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 0px;
-  margin: 15px 0px;
 
-  @media only screen and (max-width: 2000px) {
-    max-height: 518px;
-    height: 335px;
-    padding: 7px 0px 20px 0px;
+  padding: 7px 0px 20px 0px;
+  margin: 15px 0px;
+ 
+
+  @media only screen and (min-width: 1804px) {
+    max-height:526px;
+    height: 440px;
+    padding: 20px 0px;
     margin: 15px 0px;
   }
 
@@ -132,12 +137,16 @@ export const SellContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    svg {
+      width: 27px;
+      margin-bottom: 6px;
+    }
 
-    @media only screen and (max-width: 2000px) {
+    @media only screen and (min-width: 1804px) { 
       svg {
-        width: 27px;
-        margin-bottom: 6px;
-      }
+        width: 35px;
+      margin-bottom: 0px;
+     }
     }
   }
   
@@ -155,7 +164,7 @@ export const SellContainer = styled.div`
   
   p {
     color: #fb5353;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 400;
     text-align: center;
     margin-left: 10px;
@@ -163,8 +172,8 @@ export const SellContainer = styled.div`
     strong {
       opacity: 1;
     }
-    @media only screen and (max-width: 2000px){
-      font-size: 17px;
+    @media only screen and (min-width: 1804px){
+      font-size: 25px;
       font-weight: 400;
       text-align: center;
       margin-left: 10px;
@@ -173,24 +182,25 @@ export const SellContainer = styled.div`
 
   h1 {
     color: #ffffff;
-    font-size: 55px;
+    font-size: 38px;
     text-align: center;
     font-weight: 600;
-    margin-top: 70px;
+
+    margin-top: 50px;
     margin-bottom: 10px;
-    @media only screen and (max-width: 2000px) {
-      font-size: 38px;
-      margin-top: 50px;
-      margin-bottom: 10px;
+    @media only screen and (min-width: 1804px) {
+      font-size: 55px;
+      margin-top: 70px;
+      margin-bottom: 10px;      
     }
   }
 `;
 
 export const DownSellContainer = styled.div`
   width: 100%;
-  height: 300px; 
-  @media only screen and (max-width: 2000px){
-    height: 180px;
+  height: 180px;
+  @media only screen and (min-width: 1804px){
+    height: 300px;
   }
   background-color: #0a0a0a;
   display: flex;
@@ -208,28 +218,30 @@ export const DownSellContainer = styled.div`
   
   p {
     color: #fb5353;
-    font-size: 25px;
+    margin-left: 10px;
+    font-size: 17px;
     font-weight: 400;
     text-align: center;
     opacity: 1;
-    @media only screen and (max-width: 2000px){
-      font-size: 17px;
+    @media only screen and (min-width: 1804px){
+      font-size: 25px;
       font-weight: 400;
       text-align: center;
-      margin-left: 10px;
     }
   }
 
   h1 {
     color: #ffffff;
-    font-size: 55px;
+    font-size: 38px;
     text-align: center;
     font-weight: 600;
-    margin-top: 90px;
+
+    margin-top: 50px;
     margin-bottom: 10px;
-    @media only screen and (max-width: 2000px) {
-      font-size: 38px;
-      margin-top: 50px;
+    
+    @media only screen and (min-width: 1804px) {
+      font-size: 55px;
+      margin-top: 90px;
       margin-bottom: 10px;
     }
   }
@@ -237,32 +249,40 @@ export const DownSellContainer = styled.div`
 
 export const Divider = styled.div`
   width: 100%;
-  height: 7px;
   background-color: #fb5353;
-  margin-top: 15px;
 
-  @media only screen and (max-width: 2000px){
-    padding: 0px 20px;
-    height: 5px;
-    margin-top: 0px;
+  height: 5px;
+  margin-top: 0px;
+  padding: 0px 20px;
+
+
+  @media only screen and (min-width: 1804px){
+    height: 7px;
+    margin-top: 15px;
+    padding: 0;
   }
 `;
 
 export const PromoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  padding-right: 271px;
   justify-content: space-between;
   max-width: 1596px;
-  width: 80%;
   margin-top: 20px;
-  margin-bottom: 120px;
   opacity: 0;
 
-  @media only screen and (max-width: 2000px){
-    height: 585px;
-    margin-bottom: 10px;
-    width: 82%;
+  height: 585px;
+  margin-bottom: 10px;
+  width: 82%;
+  padding: 0px 0px;
+
+  @media only screen and (min-width: 1440px){
+    width: 80%;
+  }
+
+  @media only screen and (min-width: 1804px){
+    width: 80%;
+    margin-bottom: 120px; 
   }
 
   ${props => props.transformPromoOpacity && css`
@@ -273,61 +293,69 @@ export const PromoContainer = styled.div`
   `}
 
   section {
-    margin: 50px 24px;
-    @media only screen and (max-width: 2000px){
-      height: 500px;
-      margin: 50px 35px 31px 0px;
+    height: 500px;
+    margin: 50px 21px 31px 0px;
+    margin-right: 0px;
+    @media only screen and (min-width: 1804px){
+      margin: 50px 24px;
+      height: 0px;
     }
   }
 
   h1 {
+    font-size: 36px;
     color: #ffffff;
-    font-size: 51px;
     font-weight: 600;
     margin-bottom: 10px;
-    @media only screen and (max-width: 2000px){
-      font-size: 36px;
+    @media only screen and (min-width: 1804px){
+      font-size: 51px;
     }
   }
 
   h2 {
+    font-size: 22px;
     color: #3380ea;
-    font-size: 31px;
     font-weight: 400;
-    @media only screen and (max-width: 2000px){
-      font-size: 22px;
+    @media only screen and (min-width: 1804px){
+      font-size: 31px;
     }
   }
 
   p {
-    margin-top: 41px;
     color: #ffffff;
-    font-size: 20px;
     font-weight: 600;
-    width: 802px;
     opacity: 0.8;
     margin-right: 0;
-    @media only screen and (max-width: 2000px){
-      margin-top: 28px;
-      font-size: 14px;
-      width: 579px;
+
+    margin-top: 28px;
+    font-size: 14px;
+    width: 579px;
+    @media only screen and (min-width: 1804px){
+      margin-top: 41px;
+      font-size: 20px;
+      width: 802px;
+      
     }
   }
 
   div {
     margin-top: 10px;
     height: 724px;
+    width: 46%;
+    @media only screen and (min-width: 1804px) {
+      width: 41%;
+    }
   }
 `;
 
 export const Break = styled.div`
-  width: 999px;
-  height: 7px;
+  width: 800px;
+  height: 6px;
   background-color: #1c1c1c;
   margin: 55px 0px;
-  @media only screen and (max-width: 2000px) {
-    width: 800px;
-    height: 6px;
+  @media only screen and (min-width: 1804px) {
+    width: 999px;
+    height: 7px;
   }
 `;
 
@@ -341,6 +369,11 @@ export const ExtensionContainer = styled.div`
   flex-direction: row;
   opacity: 0;
 
+  @media only screen and (min-width: 1804px) {
+      width: 100%;
+      height: 755px;
+    }
+
   ${props => props.translate && css`
     & {
       animation: ${translate} 2s linear;
@@ -350,21 +383,21 @@ export const ExtensionContainer = styled.div`
 
 
   section {
-    margin-left: 115px;
-    margin-top: 73px;
+    margin-left: 66px;
+    margin-top: 41px;
+    height: 543px;
     div {
-      height: 500px;
+      color: #ffffff;
+      font-size: 16px !important;
+      margin-top: 16px;
+      margin: 0px 0px;
+      height: 400px;
     }
-    @media only screen and (max-width: 2000px) {
-      margin-left: 66px;
-      margin-top: 41px;
-      height: 543px;
+    @media only screen and (min-width: 1804px) {
+      margin-left: 115px;
+      margin-top: 73px;
       div {
-        color: #ffffff;
-        font-size: 16px !important;
-        margin-top: 16px;
-        margin: 0px 0px;
-        height: 400px;
+        height: 500px;
       }
     }
 
@@ -375,36 +408,39 @@ export const ExtensionContainer = styled.div`
   
   h1 {
     color: #ffffff;
-    font-size: 35px;
     font-weight: 600;
-    @media only screen and (max-width: 2000px) {
-      font-size: 24px;
-      margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    @media only screen and (min-width: 1804px) {
+      font-size: 35px;
+      margin-bottom: 0px;
     }
   }
 
   span {
+    font-size: 24px;
     color: #3380ea;
-    font-size: 35px;
     font-weight: 600;
     text-decoration: none;
-    @media only screen and (max-width: 2000px) {
-      font-size: 24px;
+    @media only screen and (min-width: 1804px) {
+      font-size: 35px;
     }
   }
 
   p {
-    color: #ffffff;
-    font-size: 22px;
-    margin-top: 16px;
+    
     font-weight: 500;
-    margin: 10px 0px;
     opacity: 0.9;
-    @media only screen and (max-width: 2000px) {
+
+    color: #ffffff;
+    font-size: 16px !important;
+    margin-top: 16px;
+    margin: 6px 0px;
+    @media only screen and (min-width: 1804px) {
       color: #ffffff;
-      font-size: 16px !important;
+      font-size: 22px !important;
       margin-top: 16px;
-      margin: 6px 0px;
+      margin: 10px 0px;
     }
   }
 
@@ -424,53 +460,64 @@ export const ExtensionContainer = styled.div`
     display: flex;
     flex-direction: column;
 
-    margin-right: 100px;
-    @media only screen and (max-width: 2000px) {
-      margin-right: 30px;
-      width: 656px;
+    margin-right: 30px;
+    width: 656px;
+    @media only screen and (min-width: 1804px) {
+      margin-right: 100px;
+      width: 65%;
     }
   }
 
-  @media only screen and (max-width: 2000px) {
+  aside + img {
+    width: 275px;
+    height: 404px;
+    margin-top: 30px;
+  }
+  
+  @media only screen and (min-width: 1804px) {
     aside + img {
-      width: 275px;
-      height: 404px;
+      width: 362px;
+      height: 500px;
       margin-top: 30px;
     }
   }
 `;
 
 export const Badge = styled.div`
-  width: 25px;
+  width: 13px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.49);
   border-radius: 30px 0 0 30px;
   background-color: ${props => props.color};
-  @media only screen and (max-width: 2000px) {
-    width: 13px;
+  @media only screen and (min-width: 1804px) {
+    width: 25px;
   }
 `;
 
 export const WrapperContent = styled.div`
+  width: 85%;
+  height: 580px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 65px;
   max-width: 1596px;
-  @media only screen and (max-width: 2000px) {
-    width: 85%;
-    height: 580px;
-  }
+  @media only screen and (min-width: 1804px) {
+    width: 1569px;
+    height: 614px;
+    margin-top: 50px;
+    margin-bottom: 190px;
+}
 `;
 
 export const Footer = styled.footer`
-  margin-top: 130px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
-  @media only screen and (max-width: 2000px) {
-    margin-top: 50px;
+  @media only screen and (min-width: 1804px) {
+    margin-top: 130px;
   }
 
   p {
@@ -497,8 +544,8 @@ export const Footer = styled.footer`
   div {
     display: flex;
     margin: 25px 0px;
-    @media only screen and (max-width: 2000px) {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
+    @media only screen and (min-width: 1804px) {
     }
   }
 `;
