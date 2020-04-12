@@ -123,6 +123,11 @@ export const SellContainer = styled.div`
 
   padding: 7px 0px 20px 0px;
   margin: 15px 0px;
+
+  @media only screen and (max-width: 576px) {
+    height: 240px;
+    border-radius: 15px;
+  }
  
 
   @media only screen and (min-width: 1804px) {
@@ -276,6 +281,10 @@ export const PromoContainer = styled.div`
   width: 82%;
   padding: 0px 0px;
 
+  @media only screen and (max-width: 576px) {
+    height: 464px;
+  }
+
   @media only screen and (min-width: 1440px){
     width: 80%;
   }
@@ -296,6 +305,14 @@ export const PromoContainer = styled.div`
     height: 500px;
     margin: 50px 21px 31px 0px;
     margin-right: 0px;
+
+    @media only screen and (max-width: 576px) {
+      width: 50%;
+      margin-top: 0px;
+      p {
+        width: 100%;
+      }
+    }
     @media only screen and (min-width: 1804px){
       margin: 50px 24px;
       height: 0px;
@@ -369,10 +386,14 @@ export const ExtensionContainer = styled.div`
   flex-direction: row;
   opacity: 0;
 
+  @media only screen and (max-width: 576px) {
+    max-width: 55rem;
+  }
+
   @media only screen and (min-width: 1804px) {
-      width: 100%;
-      height: 755px;
-    }
+    width: 100%;
+    height: 755px;
+  }
 
   ${props => props.translate && css`
     & {

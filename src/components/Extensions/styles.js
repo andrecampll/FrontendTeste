@@ -7,6 +7,13 @@ export const Container = styled.div`
     bottom: 354px;
     left: 116px;
     height: 500px;
+
+    @media only screen and (max-width: 576px) {
+      bottom: 184px;
+      left: 39px;
+      height: 500px;
+    }
+    
     @media only screen and (min-width: 1804px) {
       bottom: 430px;
       left: 133px;
