@@ -12,6 +12,12 @@ export const Logo = styled.img`
   width: 90px;
   height: 99.7px;
   margin-top: 10px;
+
+  @media (max-width: 576px ) {
+    width: 30% !important;
+    height: auto !important;
+  }
+
   @media (min-width: 1804px) {
     width: 139px;
     height: 154px;
@@ -30,6 +36,10 @@ export const SignUpContent = styled.div`
   margin-top: 25px;
   padding: 17px 0px;
   margin-bottom: 31px;
+
+  @media only screen and (max-width: 576px) {
+    width: 90%;
+  }
 
   @media only screen and (min-width: 1804px) {
     max-width: 622px;
@@ -54,20 +64,26 @@ export const SignUpContent = styled.div`
     display: flex;
     flex-direction: column;
     text-align: center;
+    @media (max-width: 576px) {
+      width: 72%;
+    }
+
     @media only screen and (min-width: 1804px) { 
       margin-top: 77px;
     }    
   }
 
   h1 {
-
     font-size: 13px ;
-    letter-spacing: 4px !important;
-    line-height: 26px !important;
-    text-transform: uppercase !important;
-    margin-bottom: 12px !important;
-    font-weight: 400px !important;
-    color: #cccccc !important;
+    letter-spacing: 4px ;
+    line-height: 26px ;
+    text-transform: uppercase ;
+    margin-bottom: 12px ;
+    font-weight: 400px ;
+    color: #cccccc ;
+    @media (max-width: 576px) {
+      font-size: 1.4rem !important;
+    }
   }
 
   h2 {
@@ -92,6 +108,10 @@ export const SignUpContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width:576px) {
+      width: 100%;
+    }
   }
 
   form > div {
@@ -102,6 +122,10 @@ export const SignUpContent = styled.div`
     background-color: #1d1d1d;
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 576px) {
+      width: 100%;
+    }
     
     @media only screen and (min-width: 1804px) {
       width: 404px;
@@ -114,6 +138,10 @@ export const SignUpContent = styled.div`
   div > svg {
     height: 18px;
     width: 18px;
+    @media (max-width: 576px) {
+      height: 16px;
+      width: 16px;
+    }
   }
 
   button + div {
@@ -125,6 +153,11 @@ export const SignUpContent = styled.div`
     height: 13px;
     
     svg {
+      @media (max-width: 576px) {
+      height: 10px;
+      width: 10px;
+    }
+
       @media only screen and (min-width: 1804px) {
       height: 18px;
       width: 13px;
@@ -136,6 +169,10 @@ export const Divider = styled.div`
   background-image: linear-gradient(89deg, #1054f1 0%, #1edaa7 100%);
   width: 388px;
   height: 4px;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
   
   @media only screen and (min-width: 1804px){
     width: 623px;
@@ -150,6 +187,13 @@ export const Input = styled.input`
   padding: 9px 9px;
   font-size: 12px;
   width: 196px;
+
+  @media (max-width: 576px) {
+    font-size: 1.4rem;
+    padding: 9px 11px;
+    width: 80%;
+  }
+
   @media only screen and (min-width: 1804px) {
     border-radius: 10px;
     padding: 23px 23px;
@@ -170,6 +214,10 @@ export const Button = styled.button`
   letter-spacing: 0.44px;
   margin-bottom: 20px;
   margin-top: 20px;
+
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 
   @media only screen and (min-width: 1804px) {
     width: 404px;
@@ -213,21 +261,22 @@ export const Footer = styled.footer`
   h3 {
   color: #939393;
   font-size: 10px;
-    @media only screen and (min-width: 1804px) {
-    }
+    
   }
 
   div {
     display: flex;
     margin: 10px 0px;
+    @media only screen and (max-width: 576px) {
+      margin-top: 40px;
+    }
     @media only screen and (min-width: 1804px) {
       margin: 41px 0px;
     }
   }
 
   div > img {
-    width: 20px;
-    @media only screen and (min-width: 1804px) {
-    }
+    width: 29px !important;
+    height: 20px !important;
   }
 `;
