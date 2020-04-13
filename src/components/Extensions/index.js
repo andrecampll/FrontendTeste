@@ -10,11 +10,11 @@ export default function Extensions() {
   return (
     <Container>
       <div>
-        <img src={CursoUm} alt="Curso"/>
+        <img src={CursoUm} alt="Curso" className="foto-1"/>
           <div> 
-          <img src={CursoTres} alt="Curso"/>
+          <img src={CursoTres} alt="Curso" className="foto-2"/>
               <div>
-                <img src={CursoDois} alt="Curso"/>
+                <img src={CursoDois} alt="Curso" className="foto-3"/>
               </div>
           </div>
       </div>

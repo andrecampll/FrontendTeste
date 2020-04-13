@@ -60,6 +60,9 @@ export const UpsellContainer = styled.div`
     @media only screen and (min-width: 1804px) {
       margin-right: 139px;
     }
+    @media (max-width: 576px) {
+      width: 100%;
+    }
   }
 
   aside + div {
@@ -81,7 +84,10 @@ export const UpsellContainer = styled.div`
       margin-top: 41px;
       width: 774px;
       font-size: 19px;
+    }
 
+    @media (max-width: 576px) {
+      width: 50%;
     }
   }
 
@@ -130,6 +136,10 @@ export const AcceptButton = styled.button`
     font-size: 25px;
   }
 
+  @media only screen and (max-width: 576px) {
+    width: 70%;
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -142,5 +152,9 @@ export const Break = styled.div`
   margin: 45px 0px;
   @media only screen and (min-width: 1804px) {
     width: 909px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 70%;
   }
 `;

@@ -305,6 +305,16 @@ export const PromoContainer = styled.div`
     height: 500px;
     margin: 50px 21px 31px 0px;
     margin-right: 0px;
+    @media (max-width: 1300px) {
+      width: 50%;
+      p {
+        width: 100%;
+      }
+
+      h1 {
+        width: 50%;
+      }
+    }
 
     @media only screen and (max-width: 576px) {
       width: 50%;
@@ -358,7 +368,7 @@ export const PromoContainer = styled.div`
   div {
     margin-top: 10px;
     height: 724px;
-    width: 46%;
+    width: 50%;
     @media only screen and (min-width: 1804px) {
       width: 41%;
     }
@@ -372,6 +382,10 @@ export const Break = styled.div`
   margin: 55px 0px;
   @media only screen and (min-width: 1804px) {
     width: 999px;
+    height: 7px;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 70% !important;
     height: 7px;
   }
 `;
@@ -424,6 +438,10 @@ export const ExtensionContainer = styled.div`
 
     div + button {
       margin-bottom: 50px;
+    }
+
+    @media (max-width: 1300px) {
+      width: 100%;
     }
   }
   
