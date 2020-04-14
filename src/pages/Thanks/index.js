@@ -70,7 +70,7 @@ export default function Thanks() {
 
     <Container >
       
-      <p>Não se preocupe, {nome}, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
+      <p className="p1">Não se preocupe, {nome}, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
 
       { downSell ? (
         <DownSellContainer translate={translate} >
@@ -84,10 +84,10 @@ export default function Thanks() {
         <>
           <SellContainer>
             <div>
-              <p></p>
+              <p className="invisible"></p>
               <header>
                 <AiOutlineExclamationCircle size={35} color="#fb5353"/>
-                <p>Espere… Antes de continuar, acreditamos que isso possa te interessar.</p>
+                <p className="redGroup">Espere… Antes de continuar, acreditamos que isso possa te interessar.</p>
               </header>
               
               <Link onClick={handleDownSell}>
@@ -100,7 +100,7 @@ export default function Thanks() {
           <h1>Compre junto este pacote de conteúdo <br/>
           com <span>50% de desconto</span> agora. </h1>
         
-          <p><strong>Mas atenção!</strong> Esta é uma oferta única de <span>Boas-Vindas</span>. <br/> 
+          <p className="warning"><strong>Mas atenção!</strong> Esta é uma oferta única de <span>Boas-Vindas</span>. <br/> 
           Portanto, se fechar esta pagina não poderá obtê-la novamente e perderá a oferta.</p>
           </SellContainer>
 

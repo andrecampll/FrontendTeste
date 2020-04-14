@@ -28,6 +28,12 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  .p1 {
+    @media only screen and (max-width: 576px){
+    font-size: 0.9rem !important;
+    }
+  }
+
   a {
     color: #fb5353;
     font-size: 15px;
@@ -51,6 +57,7 @@ export const Container = styled.div`
     @media only screen and (min-width: 1804px){
       font-size: 20px;
     }
+    
   }
 
   h1 {
@@ -129,8 +136,16 @@ export const SellContainer = styled.div`
   margin: 15px 0px;
 
   @media only screen and (max-width: 576px) {
-    height: 240px;
+    height: auto;
     border-radius: 15px;
+    width: 90%;
+  }
+
+  .redGroup {
+    @media only screen and (max-width: 576px){
+      font-size: 0.9rem !important;
+      margin-left: 2px;
+    }
   }
  
 
@@ -154,8 +169,19 @@ export const SellContainer = styled.div`
     @media only screen and (min-width: 1804px) { 
       svg {
         width: 35px;
-      margin-bottom: 0px;
-     }
+        margin-bottom: 0px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) { 
+      svg {
+        width: 15px;
+        margin-bottom: 0px;
+        height: auto;
+      }
+      p {
+        height: auto !important;
+      }
     }
   }
   
@@ -168,6 +194,20 @@ export const SellContainer = styled.div`
     align-items: center;
     p {
       height: 30px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-bottom: 1%;
+      .invisible {
+        height: auto;
+      }
+      padding: 0 2%;
+      a {
+        svg {
+          width: 15px;
+          height: auto;
+        }
+      }
     }
   }
   
@@ -187,6 +227,12 @@ export const SellContainer = styled.div`
       text-align: center;
       margin-left: 10px;
     }
+
+    @media only screen and (max-width: 576px) {
+      .warning {
+        margin-bottom: 10%;
+      }
+    }
   }
 
   h1 {
@@ -200,6 +246,13 @@ export const SellContainer = styled.div`
     @media only screen and (min-width: 1804px) {
       font-size: 55px;
       margin-top: 70px;
+      margin-bottom: 10px;      
+    }
+
+
+    @media only screen and (max-width: 576px) {
+      font-size: 55px;
+      margin-top: 8%;
       margin-bottom: 10px;      
     }
   }
@@ -270,6 +323,12 @@ export const Divider = styled.div`
     margin-top: 15px;
     padding: 0;
   }
+
+  @media only screen and (max-width: 576px){
+    height: 3px;
+    margin-top: 0px;
+    padding: 0;
+  }
 `;
 
 export const PromoContainer = styled.div`
@@ -286,7 +345,8 @@ export const PromoContainer = styled.div`
   padding: 0px 0px;
 
   @media only screen and (max-width: 576px) {
-    height: 464px;
+    height: 50rem;
+    width: 87%;
   }
 
   @media only screen and (min-width: 1440px){
@@ -309,22 +369,25 @@ export const PromoContainer = styled.div`
     height: 500px;
     margin: 50px 21px 31px 0px;
     margin-right: 0px;
-    @media (max-width: 1300px) {
-      width: 50%;
+    @media (min-width: 1300px) {
       p {
-        width: 100%;
       }
 
       h1 {
-        width: 50%;
       }
     }
 
     @media only screen and (max-width: 576px) {
-      width: 50%;
+      width: 70% !important;
       margin-top: 0px;
       p {
+        width: 90%;
+        margin-top: 2%;
+      }
+      h1 {
         width: 100%;
+        margin-bottom: 0;
+        height: 10%;
       }
     }
     @media only screen and (min-width: 1804px){
@@ -375,6 +438,11 @@ export const PromoContainer = styled.div`
     width: 50%;
     @media only screen and (min-width: 1804px) {
       width: 41%;
+    }
+    @media only screen and (max-width: 576px) {
+      width: 42%;
+      height: auto;
+      padding-top: 1%;
     }
   }
 `;
