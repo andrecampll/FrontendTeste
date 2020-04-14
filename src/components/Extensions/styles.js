@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  @media (max-width: 1300px) {
+  @media (max-width: 576px) {
     .foto-1 {
       width: 16rem;
       height: 23rem;
