@@ -384,9 +384,9 @@ export const Break = styled.div`
     width: 999px;
     height: 7px;
   }
+
   @media only screen and (max-width: 576px) {
-    width: 70% !important;
-    height: 7px;
+    width: 80%;
   }
 `;
 
@@ -402,6 +402,7 @@ export const ExtensionContainer = styled.div`
 
   @media only screen and (max-width: 576px) {
     max-width: 55rem;
+    padding: 0;
   }
 
   @media only screen and (min-width: 1804px) {
@@ -436,12 +437,43 @@ export const ExtensionContainer = styled.div`
       }
     }
 
-    div + button {
-      margin-bottom: 50px;
+    @media only screen and (max-width: 576px) {
+      margin-left: 4%;
+      margin-top: 7%;
+      height: 95%;
+
+      button {
+        width: 50%;
+        font-size: 1rem;
+        a {
+          font-size: 1.6rem;
+        }
+      }
+
+      div {
+        width: 100%;
+        margin-bottom: 3%;
+
+        img {
+          margin-right: 5%;
+          width: 43% !important;
+          height: 91% !important;
+          margin-top: 11%;
+        }
+        
+        aside {
+          width: 50%;
+          margin-right: 0px;
+
+          p {
+            font-size: 1.23rem !important;
+          }
+        }
+      }
     }
 
-    @media (max-width: 1300px) {
-      width: 100%;
+    div + button {
+      margin-bottom: 50px;
     }
   }
   
@@ -529,6 +561,9 @@ export const Badge = styled.div`
   background-color: ${props => props.color};
   @media only screen and (min-width: 1804px) {
     width: 25px;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 8%;
   }
 `;
 

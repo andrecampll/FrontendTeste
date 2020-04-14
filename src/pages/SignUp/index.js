@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useHistory } from 'react-router-dom';
 
 import {
@@ -21,11 +21,14 @@ import logo from '../../assets/logo-completa.png';
 
 export default function SignUp() {
   const history = useHistory();
+  const [name, setName] = useState('');
   
 
   function handleSubmit(e) {
-    
     e.preventDefault();
+
+    localStorage.setItem('nome', name);
+
     history.push('/Obrigado');
   }
 
@@ -42,7 +45,11 @@ export default function SignUp() {
         <form onSubmit={handleSubmit}>
           <div>
             <FaRegUserCircle size={30} color="#666"/>
-            <Input placeholder="Seu nome completo..."/>
+            <Input placeholder="Seu nome completo..."
+              value={name}
+              onChange={e => setName(e.target.value)}
+              required
+            />
           </div>
           <div>
             <FaRegEnvelope size={30} color="#666" />

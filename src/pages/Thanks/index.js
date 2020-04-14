@@ -27,6 +27,7 @@ import {AiOutlineExclamationCircle, AiOutlineCloseCircle} from 'react-icons/ai';
 
 export default function Thanks() {
   const [translate, setTranslate] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [transformPromoOpacity, setTransformPromoOpacity] = useState(false);
 
   const [downSell, setDownSell] = useState(false);
@@ -37,6 +38,8 @@ export default function Thanks() {
   }, {
     color:"#a89b8e", image: CursoUm,
   }]);
+
+  const nome = localStorage.getItem('nome');
 
   function handleDownSell() {
     setDownSell(true);
@@ -67,7 +70,7 @@ export default function Thanks() {
 
     <Container >
       
-      <p>Não se preocupe, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
+      <p>Não se preocupe, {nome}, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
 
       { downSell ? (
         <DownSellContainer translate={translate} >
