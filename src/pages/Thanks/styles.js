@@ -490,12 +490,8 @@ export const ExtensionContainer = styled.div`
           height: 100%;
 
           p {
-            font-size: 0.8rem !important;
+            font-size: 0.85rem !important;
             margin-bottom: 0px;
-          }
-
-          p + p {
-            margin-top: 3%;
           }
         }
       }
