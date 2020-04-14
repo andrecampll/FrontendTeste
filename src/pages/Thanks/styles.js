@@ -444,7 +444,7 @@ export const ExtensionContainer = styled.div`
 
     @media only screen and (max-width: 576px) {
       margin-left: 4%;
-      margin-top: 3%;
+      margin-top: 2%;
       height: 92%;
 
       h1 {
@@ -491,6 +491,11 @@ export const ExtensionContainer = styled.div`
 
           p {
             font-size: 0.8rem !important;
+            margin-bottom: 0px;
+          }
+
+          p + p {
+            margin-top: 3%;
           }
         }
       }
