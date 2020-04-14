@@ -104,6 +104,10 @@ export const AcceptButton = styled.button`
       letter-spacing: 0.5px;
     }
   }
+
+  @media only screen and (max-width: 576px) {
+    width: 75%;
+  }
   &:hover {
     opacity: 0.8;
   }

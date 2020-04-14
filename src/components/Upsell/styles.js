@@ -61,7 +61,7 @@ export const UpsellContainer = styled.div`
       margin-right: 139px;
     }
     @media (max-width: 576px) {
-      width: 100%;
+      width: 10%;
     }
   }
 
