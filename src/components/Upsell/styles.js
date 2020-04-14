@@ -13,6 +13,39 @@ export const UpsellContainer = styled.div`
   margin-top: 45px;
   padding: 0 60px;
 
+  @media (max-width: 576px) {
+    width: 90%;
+    padding: 0 4%;
+    padding-bottom: 3%;
+    padding-left: 6%;
+    border: 4px solid #79d152;
+
+    h1 {
+      margin-bottom: 1%;
+    }
+
+    section {
+      div {
+        margin-top: 4% !important;
+
+        aside {
+         width: 65%;
+         height: auto;
+        }
+
+        aside > h1 {
+          width: 100%;
+        }
+
+        aside > p {
+          width: 86%;
+          height: auto;
+          margin: 0;
+        }
+      }
+    }
+  }
+
 
   @media only screen and (min-width: 1804px) {
     padding: 0 115px;
@@ -69,6 +102,9 @@ export const UpsellContainer = styled.div`
     position: relative;
     margin-top: 5%;
     bottom: 6%;
+    @media (max-width: 576px) {
+      height: 25%;
+    }
   }
 
   aside > p {
@@ -100,6 +136,9 @@ export const UpsellContainer = styled.div`
       margin-top: 55px;
 
     }
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 0;
+    }
   }
 
   section > div {
@@ -110,6 +149,10 @@ export const UpsellContainer = styled.div`
     @media only screen and (min-width: 1804px) {
       height: 535px;
       margin-top: 0px;
+    }
+    @media only screen and (max-width: 576px) {
+      align-items: center;
+      margin-bottom: 0;
     }
   }
 `;
@@ -137,7 +180,16 @@ export const AcceptButton = styled.button`
   }
 
   @media only screen and (max-width: 576px) {
-    width: 70%;
+    width: 35%;
+    font-size: 1rem;
+    margin-bottom: 1.3rem !important;
+    margin-top: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+    a {
+      font-size: 1.1rem;
+    }
+
   }
 
   &:hover {
@@ -155,6 +207,9 @@ export const Break = styled.div`
   }
 
   @media only screen and (max-width: 576px) {
-    width: 70%;
+    width: 71%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    height: 0.6rem;
   }
 `;

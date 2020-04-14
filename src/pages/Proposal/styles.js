@@ -53,6 +53,39 @@ export const UpsellContainer = styled.div`
   margin-top: 45px;
   padding: 0 60px;
 
+  @media (max-width: 576px) {
+    width: 90%;
+    padding: 0 4%;
+    padding-bottom: 3%;
+    padding-left: 6%;
+    border: 4px solid #79d152;
+
+    h1 {
+      margin-bottom: 1%;
+    }
+
+    section {
+      div {
+        margin-top: 4% !important;
+
+        aside {
+         width: 65%;
+         height: auto;
+        }
+
+        aside > h1 {
+          width: 80%;
+        }
+
+        aside > p {
+          width: 86%;
+          height: auto;
+          margin: 0;
+        }
+      }
+    }
+  }
+
   @media only screen and (min-width: 1804px) {
     width: 100%;
     margin-top: 100px;
@@ -64,8 +97,12 @@ export const UpsellContainer = styled.div`
     font-size: 40px;
     text-align: center;
     @media only screen and (min-width: 1804px) {
-      
       margin-top: 69px;
+      font-size: 55px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      margin-top: 15%;
       font-size: 55px;
     }
   }
@@ -99,12 +136,19 @@ export const UpsellContainer = styled.div`
       height: 346px;
       margin-right: 139px;
     }
+
+    @media (max-width: 576px) {
+      margin-right: 0;
+    }
   }
 
   aside + div {
     position: relative;
     margin-top: 5%;
     bottom: 6%;
+    @media (max-width: 576px) {
+      height: 25%;
+    }
   }
 
   aside > p {
@@ -121,6 +165,9 @@ export const UpsellContainer = styled.div`
       margin-top: 41px;
       width: 774px;
       font-size: 19px;
+    }
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 0;
     }
   }
 
@@ -144,6 +191,10 @@ export const UpsellContainer = styled.div`
     @media only screen and (min-width: 1804px) {
       height: 535px;      
     }
+    @media only screen and (max-width: 576px) {
+      align-items: center;
+      margin-bottom: 0;
+    }
   }
 `;
 
@@ -156,6 +207,11 @@ export const ExtensionsContainer = styled.div`
     height: 500px;
     @media only screen and (min-width: 1804px) {
       left: 125px;
+    }
+
+    @media (max-width: 576px) {
+      bottom: 172px;
+      left: 30px;
     }
   }
 
@@ -230,6 +286,18 @@ export const AcceptButton = styled.button`
     font-size: 25px;
   }
 
+  @media only screen and (max-width: 576px) {
+    width: 35%;
+    font-size: 1rem;
+    margin-bottom: 1.3rem !important;
+    margin-top: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+    a {
+      font-size: 1.1rem;
+    }
+  }
+
   &:hover {
     opacity: 0.8;
   }
@@ -244,5 +312,12 @@ export const Break = styled.div`
 
   @media only screen and (min-width: 1804px) {
     width: 909px;
+  }
+
+  @media only screen and (max-width: 576px) {
+    width: 71%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    height: 0.6rem;
   }
 `;

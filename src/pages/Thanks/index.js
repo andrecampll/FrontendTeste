@@ -121,7 +121,7 @@ export default function Thanks() {
             <Extensions />
           </PromoContainer>
 
-          <Link onClick={handleDownSell}><span>Não obrigado, quero perder esta oferta.</span></Link>
+          <Link onClick={handleDownSell} ><span className="giveUp">Não obrigado, quero perder esta oferta.</span></Link>
           
           <AcceptButton>
             <Link to="/">Comprar Pacote Completo - R$ 67,00</Link>
@@ -195,7 +195,7 @@ export default function Thanks() {
           <a href="#">Termos de Uso e</a><a href="#"> Politicas de Privacidade.</a>
         </p>
         <div>
-          <img src={astron} alt=""/>
+          <img src={astron} alt="" className="Logo"/>
           <h3>Tecnologia Grupo Astron®</h3>
         </div>
       </Footer>

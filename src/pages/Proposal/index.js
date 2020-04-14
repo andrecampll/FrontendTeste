@@ -20,7 +20,7 @@ export default function Proposal(styles) {
   console.log(state);
   return (
     <Container>
-      <p>Não se preocupe, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
+      <p className="p1">Não se preocupe, sua conta já está ativa, você receberá seu acesso por E-mail… Enquanto isso, aproveite a oferta abaixo.</p>
       
       <UpsellContainer>
         <h1>Que tal comprar o restante do pacote <br/>
@@ -63,14 +63,14 @@ export default function Proposal(styles) {
         </section>
       </UpsellContainer>
 
-      <Link to="/Obrigado"><span>Não obrigado, quero perder esta oferta.</span></Link>
+      <Link to="/Obrigado"><span className="giveUp">Não obrigado, quero perder esta oferta.</span></Link>
 
       <Footer>
         <p>
           <a href="#">Termos de Uso e</a><a href="#"> Politicas de Privacidade.</a>
         </p>
         <div>
-          <img src={astron} alt=""/>
+          <img src={astron} alt="" className="Logo"/>
           <h3>Tecnologia Grupo Astron®</h3>
         </div>
       </Footer>

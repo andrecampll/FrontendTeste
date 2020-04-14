@@ -28,12 +28,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  .p1 {
-    @media only screen and (max-width: 576px){
-    font-size: 0.9rem !important;
-    }
-  }
-
   a {
     color: #fb5353;
     font-size: 15px;
@@ -113,7 +107,7 @@ export const AcceptButton = styled.button`
   }
 
   @media only screen and (max-width: 576px) {
-    width: 75%;
+    width: 65%;
   }
   &:hover {
     opacity: 0.8;
@@ -263,6 +257,10 @@ export const DownSellContainer = styled.div`
   height: 180px;
   @media only screen and (min-width: 1804px){
     height: 300px;
+  }
+  @media (max-width: 576px) {
+    height: auto;
+    margin-bottom: 0;
   }
   background-color: #0a0a0a;
   display: flex;
@@ -473,7 +471,7 @@ export const ExtensionContainer = styled.div`
   opacity: 0;
 
   @media only screen and (max-width: 576px) {
-    max-width: 55rem;
+    width: 100%;
     padding: 0;
     height: 50%;
   }
@@ -525,7 +523,7 @@ export const ExtensionContainer = styled.div`
       }
 
       button {
-        width: 50%;
+        width: 35%;
         font-size: 1rem;
         margin-bottom: 1.3rem !important;
         margin-top: 1rem;
@@ -546,19 +544,19 @@ export const ExtensionContainer = styled.div`
           margin-right: 5%;
           width: 43% !important;
           height: 91% !important;
-          margin-top: 12%;
           position: relative;
-          bottom: 33px;
+          bottom: auto;
           left: 0px;
+          margin-top: -3%;
         }
         
         aside {
           width: 50%;
           margin-right: 0px;
-          height: 100%;
+          height: auto;
 
           p {
-            font-size: 0.85rem !important;
+            font-size: 63% !important;
             margin-bottom: 0px;
           }
         }
@@ -656,7 +654,7 @@ export const Badge = styled.div`
     width: 25px;
   }
   @media only screen and (max-width: 576px) {
-    width: 8%;
+    width: 3%;
   }
 `;
 
@@ -677,6 +675,7 @@ export const WrapperContent = styled.div`
 
   @media only screen and (max-width: 576px) {
     height: auto !important;
+    width: 90%;
   }
 `;
 

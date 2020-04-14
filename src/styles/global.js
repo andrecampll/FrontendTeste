@@ -11,6 +11,22 @@ export default createGlobalStyle`
   html {
     font-size: 62.5%;
   }
+
+  @media only screen and (max-width: 576px){
+    .giveUp {
+      font-size: 0.9rem !important;
+    }
+
+    .Logo {
+      width: 20px !important;
+      height: auto !important;
+    }
+
+    .p1 {
+      font-size: 0.9rem !important;
+    }
+  }
+  
   @media (max-width: 576px) {
     html {
       p {
