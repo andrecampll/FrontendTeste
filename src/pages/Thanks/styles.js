@@ -407,6 +407,7 @@ export const ExtensionContainer = styled.div`
   @media only screen and (max-width: 576px) {
     max-width: 55rem;
     padding: 0;
+    height: 50%;
   }
 
   @media only screen and (min-width: 1804px) {
@@ -424,7 +425,7 @@ export const ExtensionContainer = styled.div`
 
   section {
     margin-left: 66px;
-    margin-top: 41px;
+    margin-top: 2%;
     height: 543px;
     div {
       color: #ffffff;
@@ -443,34 +444,53 @@ export const ExtensionContainer = styled.div`
 
     @media only screen and (max-width: 576px) {
       margin-left: 4%;
-      margin-top: 7%;
-      height: 95%;
+      margin-top: 3%;
+      height: 92%;
+
+      h1 {
+        font-size: 1.6rem !important;
+        margin-bottom: 0;
+      }
+
+      span {
+        font-size: 1.6rem !important;
+      }
 
       button {
         width: 50%;
         font-size: 1rem;
+        margin-bottom: 1.3rem !important;
+        margin-top: 1rem;
+        height: 3rem;
+        border-radius: 4px;
         a {
-          font-size: 1.6rem;
+          font-size: 1.1rem;
         }
       }
 
       div {
         width: 100%;
-        margin-bottom: 3%;
+        margin-bottom: 0;
+        height: 86%;
+        align-items: center;
 
         img {
           margin-right: 5%;
           width: 43% !important;
           height: 91% !important;
-          margin-top: 11%;
+          margin-top: 12%;
+          position: relative;
+          bottom: 33px;
+          left: 0px;
         }
         
         aside {
           width: 50%;
           margin-right: 0px;
+          height: 100%;
 
           p {
-            font-size: 1.23rem !important;
+            font-size: 0.8rem !important;
           }
         }
       }
@@ -584,7 +604,11 @@ export const WrapperContent = styled.div`
     height: 614px;
     margin-top: 50px;
     margin-bottom: 190px;
-}
+  }
+
+  @media only screen and (max-width: 576px) {
+    height: auto !important;
+  }
 `;
 
 export const Footer = styled.footer`
